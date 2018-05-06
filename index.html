@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DDOS: Ovierview, Attacks, Defenses</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
@@ -13,17 +14,325 @@
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand" href="">DDOS</a>
+            <ul class="navbar-nav">
+                <li>
+                    <a href="">Overview</a>
+                </li>
+                <li>
+                    <a href="">Attacks</a>
+                </li>
+                <li>
+                    <a href="">Defenses</a>
+                </li>
+                <li>
+                    <a href="">Resources</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Header -->
+    <header>
+        <div class="hero-text">
+            <h1>Distributed Denial Of Service</h1>
+             <h5>Alan Ibarra | Jose Gonzalez | Anthony Macias
+             </h5>
+        </div>
+    </header>
 
+    <!-- Ovierview -->
+    <section id="overview" class="section-overview">
+        <div class="container">
+            <h2>Overview</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>What is DDOS?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, est adipisci eligendi sapiente perspiciatis
+                        dignissimos illum natus nisi voluptas perferendis beatae assumenda aliquam porro vero similique veniam
+                        possimus rerum delectus?</p>
+                    <h4>Who is targeted?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus optio ea, ipsa quia a quas! Similique
+                        tempore corporis temporibus vel facere neque necessitatibus id, autem dolor debitis iure, nisi harum?</p>
+                    <h4></h4>
+                </div>
+                <div class="col-md-12">
+                    <h4>Famous DDOS Attacks</h4>
+                    <div class="container">
+                        <div class="row famous-ddos">
+                            <div class="col-md-4">
+                                <div class="card card-body">
+                                    <h6>Github</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia porro ea quod reiciendis
+                                        temporibus ipsum molestias, ullam nulla excepturi quos!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-body">
+                                    <h6>Trump & Hilary Campaign</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia porro ea quod reiciendis
+                                        temporibus ipsum molestias, ullam nulla excepturi quos!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-body">
+                                    <h6>DYNNDS</h6>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia porro ea quod reiciendis
+                                        temporibus ipsum molestias, ullam nulla excepturi quos!</p>
+                                </div>
 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DDOS Attacks -->
+    <section id="attacks" class="section-attacks">
+        <div class="container">
+            <h2>Attacks</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h4>DDOS Attack Types</h4>
+                        <p>
+                            DDOS attacks can be categorized based on vulnerabilities in the layers of the TCP/IP stack.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row section-row">
+                <table class="table">
+                    <thead>
+                        <th>Layer</th>
+                        <th>Protocol</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Transport</td>
+                            <td>TCP/IP</td>
+                            <td>SYN Attack</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid earum, tenetur esse expedita
+                                ipsa delectus!</td>
+                        </tr>
+                        <tr>
+                            <td>Internet</td>
+                            <td>ICMP</td>
+                            <td>ICMP Flooding</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde esse, amet praesentium id assumenda
+                                tenetur veritatis vero quaerat delectus sunt?</td>
+                        </tr>
+                        <tr>
+                            <td>Transport</td>
+                            <td>UDP</td>
+                            <td>UDP Flooding</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maiores ut architecto rerum
+                                totam dolores corporis iure esse iusto repellendus.</td>
+                        </tr>
+                        <tr>
+                            <td>Application</td>
+                            <td>HTTP</td>
+                            <td>HTTP/HTTPS Flooding</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non quasi ab exercitationem
+                                officiis recusandae assumenda tenetur sequi totam soluta!</td>
+                        </tr>
+                        <tr>
+                            <td>Network Access</td>
+                            <td>MAC</td>
+                            <td>Vlan Hopping</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque incidunt aspernatur porro ipsa,
+                                quam quidem accusantium ipsum eaque? Rem, ipsum!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- DDOS Defenses -->
+    <section id="defenses" class="section-defenses">
+        <h2>Defenses</h2>
+        <div class="container">
+            <div class="row defense-row">
+                <div class="col-md-5">
+                    <h4>DDOS Prevention</h4>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Ingress/Egress Filtering
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Router-Based Packet Filtering
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Hop Count Packet Filtering
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <h4>DDOS Detection</h4>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                        Signature Based Detection
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                                        Anomaly-Based Detection
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                        MULTOPS
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="section-resources">
+        <h2>Resources</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/">What is a DDoS Attack?</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-botnet/">What is a DDoS Botnet?</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.wired.com/story/github-ddos-memcached/">Github DDOS Attack</a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.esecurityplanet.com/network-security/types-of-ddos-attacks.html">DDoS Attack Types</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>CS3000 Communication Networks Final Project</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-        crossorigin="anonymous"></script>s
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

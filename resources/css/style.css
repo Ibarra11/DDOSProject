@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 18px;
+    font-family: 'Ubuntu','Arial', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+/***************************
+    Reusable Styles
+****************************/
+h1{
+    font-size: 3.25rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h2{
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+h3{
+    
+}
+
+section{
+    padding: 50px 0;
+}
+/***************************
+    Navigation Styles
+****************************/
+
+nav{
+    background-color: #00ADA7;
+}
+nav a:link, nav a:visited{
+    font-size: 1rem;
+    color: #fff;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+nav a:hover, nav a:active{
+
+}
+
+/***************************
+    Header Styles
+****************************/
+
+header{
+    background-color: #EEEEF0;
+    height: 75vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text{
+    text-align: center;
+}
+
+/***************************
+    Overview Styles
+****************************/
+.famous-ddos{
+    margin-top: 20px;
+}
+
+h6{
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+
+
+/***************************
+    Attack Styles
+****************************/
+.section-attacks{
+    background-color: #DDDDE1;
+}
+
+.section-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.table{
+    border: 1px solid white;
+    background-color: #2F8C87;
+    color: #fff;
+}
+
+td{
+    border: 1px solid white;
+}
+
+th{
+    border: 1px solid white;
+}
+
+th:nth-child(1), th:nth-child(2),th:nth-child(3){
+    width: 13%;
+    top: 50%;
+}
+
+.defense-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.defense-row h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.defense-row h5{
+    text-align: center;
+}
+
+/***************************
+    Resources
+****************************/
+.section-resources{
+    background-color: #DDDDE1;
+}
+
+
+/**************************
+    FOOTER Styles
+****************************/
+footer{
+    background-color: #00ADA7;
+    height: 65px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    padding: 0;
+    margin: 0;
+}
